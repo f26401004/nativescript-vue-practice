@@ -5,6 +5,7 @@ Vue.use(VueRouter);
 
 import Home from '../components/Home';
 import DialogPractice from '../components/DialogPractice';
+import ActionBarPractice from '../components/ActionBarPractice';
 
 const router = new VueRouter({
   pageRouting: true,
@@ -21,6 +22,13 @@ const router = new VueRouter({
       component: DialogPractice,
       meta: {
         title: 'Dialog-Practice',
+      },
+    },
+    {
+      path: '/actionbar',
+      component: ActionBarPractice,
+      meta: {
+        title: 'ActionBar-Practice',
       },
     },
     {path: '*', redirect: '/home'},

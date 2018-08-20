@@ -1,9 +1,10 @@
 <template>
   <Page class="page">
-    <ActionBar class="action-bar" title="Dialog Practice"/>
+    <ActionBar class="action-bar" title="Practice"/>
 
     <StackLayout>
       <Button @tap="$router.push('/dialog')"> Dialog </Button>
+      <Button @tap="$router.push('/actionbar')"> ActionBar </Button>
     </StackLayout>
 
   </Page>
