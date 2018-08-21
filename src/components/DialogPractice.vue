@@ -19,14 +19,14 @@ const dialogs = require('tns-core-modules/ui/dialogs')
 
 export default {
   methods: {
-    alertTest: () => {
+    alertTest: function () {
       alert({
         title: 'alert test',
         message: 'context here',
         okButtonText: 'OK'
       })
     },
-    promptTest: () => {
+    promptTest: function () {
       prompt({
         title: 'prompt test',
         message: 'context here',
@@ -37,7 +37,7 @@ export default {
         console.log(`User input result: ${result.result}, text: ${result.text}`)
       })
     },
-    promptTestInputType: () => {
+    promptTestInputType: function () {
       prompt({
         title: 'prompt inputtype test',
         message: 'context here',
@@ -49,7 +49,7 @@ export default {
         console.log(`User input result: ${result.result}, text: ${result.text}`)
       })
     },
-    confirmTest: () => {
+    confirmTest: function () {
       confirm({
         title: 'confirm test',
         message: 'context here',
@@ -59,7 +59,7 @@ export default {
         console.log(result)
       })
     },
-    loginTest: () => {
+    loginTest: function () {
       login({
         title: 'login test',
         message: 'context here',
@@ -71,7 +71,7 @@ export default {
         console.log(`Dialog result: ${result.result}, user: ${result.userName}, pwd: ${result.password}`);
       })
     },
-    actionTest: () => {
+    actionTest: function () {
       action({
         title: 'choose test',
         message: 'context here',
