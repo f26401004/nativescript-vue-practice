@@ -7,7 +7,7 @@ import Home from '../components/Home';
 import DialogPractice from '../components/DialogPractice';
 import ActionBarPractice from '../components/ActionBarPractice';
 import ComponentsPractice from '../components/ComponentsPractice';
-
+import ListViewPractice from '../components/ListViewPractice';
 
 const router = new VueRouter({
   pageRouting: true,
@@ -38,6 +38,13 @@ const router = new VueRouter({
       component: ComponentsPractice,
       meta: {
         title: 'Components-Practice',
+      },
+    },
+    {
+      path: '/listview',
+      component: ListViewPractice,
+      meta: {
+        title: 'ListView-Practice',
       },
     },
     {path: '*', redirect: '/home'},

@@ -14,7 +14,8 @@
     "watch": "webpack --watch --env.tnsAction run",
     "watch:android": "npm run watch -- --env.android",
     "watch:ios": "npm run watch -- --env.ios",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "emulator": "emulator -avd Nexus_5X_API_28"
   },
   "dependencies": {
     "nativescript-dialog": "^0.1.0",
