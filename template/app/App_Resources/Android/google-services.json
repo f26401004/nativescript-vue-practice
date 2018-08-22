@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "329079308755",
+    "firebase_url": "https://nativescript-vue-practice.firebaseio.com",
+    "project_id": "nativescript-vue-practice",
+    "storage_bucket": "nativescript-vue-practice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329079308755:android:459163bd31908909",
+        "android_client_info": {
+          "package_name": "org.nativescript.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "329079308755-abatksu6r99s7etn9p7c1h923ku2spca.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.nativescript.application",
+            "certificate_hash": "bd1281edc1ac6e26b203831f4ab8f6cc5e2c62ee"
+          }
+        },
+        {
+          "client_id": "329079308755-3q3qte9lki4uhc8tn3imj3k93gcqg26a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJcKFYwoOKd40Z7aIxEY4NsqA0PRCfbCk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "329079308755-3q3qte9lki4uhc8tn3imj3k93gcqg26a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
