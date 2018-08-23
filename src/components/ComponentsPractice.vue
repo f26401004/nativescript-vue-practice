@@ -29,7 +29,11 @@
           <SegmentedBarItem title="Second" />
           <SegmentedBarItem title="Third" />
         </SegmentedBar>
-
+        
+        <Slider v-model="sliderValue" @valueChange="onValueChange"/>
+        <Switch v-model="itemEnabled" @checkedChange="onCheckChange"/>
+        <TimePicker v-model="selectedTime" @timeChange="onTimeChange" />
+        <WebView src="http://nativescript-vue.org/" />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -44,7 +48,10 @@ export default {
       selectedItem: '',
       currentProgress: 66,
       searchQuery: '請輸入關鍵字',
-      selectedTab: null
+      selectedTab: null,
+      sliderValue: 66,
+      itemEnabled: false,
+      selectedTime: new Date()
     }
     
   },
@@ -85,6 +92,17 @@ export default {
     onSelectedTabIndexChange: function () {
       console.log('segment bar change!!')
       console.log(`the selected tab index is ${this.selectedTab}`)
+    },
+    onValueChange: function () {
+      console.log('slider value change!!')
+      console.log(`slider value is ${this.sliderValue}`)
+    },
+    onCheckChange: function () {
+      console.log('switch value change!!')
+      console.log(`switch value is ${this.itemEnabled}`)
+    },
+    onTimeChange: function () {
+      console.log("time picker's date value change!!")
     }
   }
 }

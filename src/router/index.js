@@ -8,6 +8,8 @@ import DialogPractice from '../components/DialogPractice';
 import ActionBarPractice from '../components/ActionBarPractice';
 import ComponentsPractice from '../components/ComponentsPractice';
 import ListViewPractice from '../components/ListViewPractice';
+import TabViewPractice from '../components/TabViewPractice';
+import TextViewPractice from '../components/TextViewPractice';
 
 const router = new VueRouter({
   pageRouting: true,
@@ -45,6 +47,20 @@ const router = new VueRouter({
       component: ListViewPractice,
       meta: {
         title: 'ListView-Practice',
+      },
+    },
+    {
+      path: '/tabview',
+      component: TabViewPractice,
+      meta: {
+        title: 'TabView-Practice',
+      },
+    },
+    {
+      path: '/textview',
+      component: TextViewPractice,
+      meta: {
+        title: 'TextView-Practice',
       },
     },
     {path: '*', redirect: '/home'},
