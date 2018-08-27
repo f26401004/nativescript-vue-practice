@@ -15,7 +15,7 @@
     "watch:android": "npm run watch -- --env.android",
     "watch:ios": "npm run watch -- --env.ios",
     "clean": "rimraf dist",
-    "emulator": "emulator -avd Nexus_5X_API_28"
+    "emulator": "emulator -avd Nexus_5X_API_28 -wipe-data"
   },
   "dependencies": {
     "nativescript-dialog": "^0.1.0",

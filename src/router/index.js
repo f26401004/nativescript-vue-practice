@@ -10,6 +10,7 @@ import ComponentsPractice from '../components/ComponentsPractice';
 import ListViewPractice from '../components/ListViewPractice';
 import TabViewPractice from '../components/TabViewPractice';
 import TextViewPractice from '../components/TextViewPractice';
+import StylePractice from '../components/StylePractice';
 
 const router = new VueRouter({
   pageRouting: true,
@@ -61,6 +62,13 @@ const router = new VueRouter({
       component: TextViewPractice,
       meta: {
         title: 'TextView-Practice',
+      },
+    },
+    {
+      path: '/style',
+      component: StylePractice,
+      meta: {
+        title: 'Style-Practice',
       },
     },
     {path: '*', redirect: '/home'},
