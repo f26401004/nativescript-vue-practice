@@ -1,11 +1,15 @@
 <template>
   <page class="page">
-    <action-bar class="action-bar" title="Style Practice"/>
-    <flexbox-layout alignItems="flex-start">
-      <button class="btn" id="test">Click</button>
-      <button class="btn" testAttr="flower">Click</button>
-    </flexbox-layout>
-
+    <action-bar title="Style Practice"/>
+    <stack-layout class="direct-sibling--type">
+      <label text="Direct sibling by type"/>
+      <button text="Test Button" class="btn" testAttr="flower"/>
+      <label text="Test Label"/>
+      <button text="Test Button" class="btn" id="test"/>
+      <label text="Test Label"/>
+      <button text="Test Button" class="btn"/>
+      <label  text="Test Label"/>
+    </stack-layout>
   </page>
 </template>
 
@@ -38,8 +42,17 @@ export default {
     border-color: blue;
     border-width: 10px;
   }
-  button[testAttr~='flower'] {
-    border-color: blue;
-    border-width: 5px;
+  button {
+    width: 500px;
+    height: 200px;
+  }
+  .btn1 {
+    padding: 50px;
+    margin: 100px;
+  }
+
+  stack-layout button + label {
+    background-color:green;
+    color:white;
   }
 </style>

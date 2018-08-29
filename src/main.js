@@ -11,7 +11,10 @@ import './styles.scss';
 // init the firebase.
 firebase.init({
   onAuthStateChanged: data => {
-    console.log((data.loggedIn ? "Logged in to firebase" : "Logged out from firebase") + " (init's onAuthStateChanged callback)");
+    console.log((data.loggedIn ? 'Logged in to firebase' : 'Logged out from firebase') + " (init's onAuthStateChanged callback)");
+    if (data.loggedIn) {
+      console.log("user's emal address: " + (data.user.email ? data.user.email : "N/A"))
+    }
   },
   persist: false
 }).then(
@@ -22,6 +25,7 @@ firebase.init({
     console.log(error)
   }
 )
+
 
 // Uncomment the following to see NativeScript-Vue output logs
 //Vue.config.silent = false;

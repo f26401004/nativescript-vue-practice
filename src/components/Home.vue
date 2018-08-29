@@ -10,6 +10,7 @@
       <Button @tap="$router.push('/tabview')"> TabView </Button>
       <Button @tap="$router.push('/textview')"> TextView </Button>
       <Button @tap="$router.push('/style')"> Style </Button>
+      <Button @tap="$router.push('/login')"> Login </Button>
     </StackLayout>
 
   </Page>

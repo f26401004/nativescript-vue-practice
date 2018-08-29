@@ -11,6 +11,7 @@ import ListViewPractice from '../components/ListViewPractice';
 import TabViewPractice from '../components/TabViewPractice';
 import TextViewPractice from '../components/TextViewPractice';
 import StylePractice from '../components/StylePractice';
+import LoginPractice from '../components/LoginPractice';
 
 const router = new VueRouter({
   pageRouting: true,
@@ -69,6 +70,13 @@ const router = new VueRouter({
       component: StylePractice,
       meta: {
         title: 'Style-Practice',
+      },
+    },
+    {
+      path: '/login',
+      component: LoginPractice,
+      meta: {
+        title: 'Login-Practice',
       },
     },
     {path: '*', redirect: '/home'},
