@@ -14,6 +14,8 @@ firebase.init({
     console.log((data.loggedIn ? 'Logged in to firebase' : 'Logged out from firebase') + " (init's onAuthStateChanged callback)");
     if (data.loggedIn) {
       console.log("user's emal address: " + (data.user.email ? data.user.email : "N/A"))
+      console.log('Now logout for testing')
+      firebase.logout()
     }
   },
   persist: false
